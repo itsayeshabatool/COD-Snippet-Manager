@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COD Snippet Manager — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="back-portfolio" href="../../index.html#projects">← Portfolio</a>
+
+  <header class="app-bar">
+    <strong>COD Snippet Manager</strong>
+    <span class="tag">Local-first demo</span>
+  </header>
+
+  <div class="layout">
+    <aside class="side">
+      <h2>New snippet</h2>
+      <form id="form">
+        <label>
+          Title
+          <input type="text" id="title" name="title" autocomplete="off" />
+        </label>
+        <label>
+          Tag
+          <select id="tag" name="tag">
+            <option value="javascript">javascript</option>
+            <option value="react">react</option>
+            <option value="css">css</option>
+            <option value="html">html</option>
+          </select>
+        </label>
+        <label>
+          Code
+          <textarea id="code" name="code" rows="10"></textarea>
+        </label>
+        <button type="submit" class="submit">Add snippet</button>
+      </form>
+    </aside>
+
+    <main class="main">
+      <input type="search" id="search" placeholder="Search snippets…" autocomplete="off" />
+      <ul id="list" class="list"></ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
